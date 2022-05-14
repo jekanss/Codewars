@@ -34,5 +34,13 @@ console.log(getMiddle('testing'));
 console.log(getMiddle('middle'));
 console.log(getMiddle('A'));
 
-const numb = 10.5
-console.log(numb.toFixed());
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
